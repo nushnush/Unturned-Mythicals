@@ -63,7 +63,7 @@ namespace Mythicals
                     {
                         if (list[i].type.ToLower().Contains("hat"))
                         {
-                            Mythicals.Instance.RegisterPlayer(client.CSteamID.m_SteamID, hatId);
+                            Mythicals.Instance.RegisterPlayer(client.CSteamID.m_SteamID, list[i].itemdefid);
                             UnturnedChat.Say(caller, "Successfully applied " + list[i].name + ". Reconnect to apply changes.");
                             return;
                         }
